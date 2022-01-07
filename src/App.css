@@ -1,38 +1,258 @@
-.App {
+body {
+  width: 90vw;
+  height: 70vh;
+  overflow-x: hidden;
+  padding-right: 10.5%;
+}
+
+.navLink:hover,
+.navLink:active,
+.navLink:visited,
+.navLink:link,
+.customerLink:hover,
+.customerLink:active,
+.customerLink:visited,
+.customerLink:link,
+.companyName:hover,
+.companyName:active,
+.companyName:visited,
+.companyName:link {
+  text-decoration: none;
+  color: black;
+}
+
+.navLink:hover,
+.customerLink:hover {
+  background-color: white;
+}
+
+.homePage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./images/catwallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:top;
+  z-index: 0;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-content: center;
+  height: 50px;
+  background-image: linear-gradient(to top, rgba(255,255,255,0.4) 0%, rgba(167,167,167,0.4) 100%);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.navLinkBox {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-self:start;
+  position: relative;
+  padding-left: 3%;
+}
+
+.nameBox {
+  width: 60%;
+  text-align: center;
+  font-size: 40px;
+  padding-right: 9.5%;
+  position: relative;
+}
+
+.companyName {
+  width: 100%;
+}
+
+.customerBox {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+  position: relative;
+  padding-right: 3%;
+}
+
+.navLink {
+  box-sizing: border-box;
+  height: 50px;
+  width: 33.33%;
+  border-right: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  padding-top: 12px;
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navLink:last-of-type {
+  border-right: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.customerLink {
+  box-sizing: border-box;
+  height: 50px;
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  padding-top: 12px;
+  position: relative;
+  border-right: 1px solid white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.customerLink:last-of-type {
+  border: none;
+}
+
+.burgerMenu {
+  box-sizing: border-box;
+  background-image: url(./images/burgermenu.png);
+  background-repeat: no-repeat;
+  background-size: 16;
+  background-position-x: 25px;
+  background-position-y: 6px;
+  height: 50px;
+  /* width: 100%; */
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.clickForMore {
+  text-align: center;
+  padding-right: 7%;
+}
+
+.petPics {
+  width: 100vw;
+  padding-top: 50px;
+  overflow-y:unset;
+}
+
+.hiddenInfo,
+.shownInfo {
+  height: 230px;
+  background-color: rgba(60, 60, 80, 0.75);
+  width: 90%;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.hiddenInfo {
+  visibility: hidden;
+}
+
+.shownInfo {
+  visibility: visible;
+  z-index: 10;
+  box-shadow: 0px 28px 16px -12px rgba(0,0,0,0.66);
+}
+
+.shownInfo:hover {
+  cursor: pointer;
+}
+
+.addBasket {
+  position: relative;
+  top: 105px;
+  align-self: center;
+  z-index: 20;
+  background-color: rgba(60, 60, 80, 0.75);
+  box-shadow: 0px 28px 16px -12px rgba(0,0,0,0.66);
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.addBasket:hover {
+  cursor:pointer;
+  background-color: rgba(30, 30, 40, 0.85);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clickToClose {
+  position: relative;
+  top: 95px;
+  font-size: 10px;
+}
+
+ol {
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+.photoDiv {
+  display: flex;
+  justify-content: center;
+  height: 275px;
+  width: 380px;
+  overflow: hidden;
+  padding: 15px auto;
+  position: relative;
+}
+
+.photoDiv p{
+  color: white;
+  margin-bottom: -15px;
+  text-align: center;
+}
+
+.profilePicture {
+  height: 230px;
+  box-shadow: 0px 28px 16px -12px rgba(0,0,0,0.66);
+  position: absolute;
+}
+
+.profilePicture:hover {
+  cursor: pointer;
+}
+
+.pageTitle {
+  /* margin-right: 3.5%; */
+  padding-top: 60px;
+}
+
+.homeLink:hover,
+.homeLink:active,
+.homeLink:link,
+.homeLink:visited {
+  text-decoration: none;
+}
+
+.aboutPageContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  padding-right: 8%;
+}
+
+.aboutPageInfo {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+hr {
+  width: 50%;
 }
