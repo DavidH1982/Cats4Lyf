@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Cats4Lyf/static/css/main.3232640d.css",
+    "main.js": "/Cats4Lyf/static/js/main.620505b7.js",
+    "static/media/catwallpaper.jpg": "/Cats4Lyf/static/media/catwallpaper.8552b7c971fd2b466c1f.jpg",
+    "index.html": "/Cats4Lyf/index.html",
+    "main.3232640d.css.map": "/Cats4Lyf/static/css/main.3232640d.css.map",
+    "main.620505b7.js.map": "/Cats4Lyf/static/js/main.620505b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3232640d.css",
+    "static/js/main.620505b7.js"
+  ]
+}
